@@ -1,0 +1,13 @@
+jms_serializer:
+    metadata:
+        warmup:
+            paths:
+                included:
+                  - "%kernel.project_dir%/src/Entity/"
+                  - "%kernel.project_dir%/src/Model/"
+
+    visitors:
+        json_serialization:
+            options:
+                - JSON_UNESCAPED_SLASHES
+                - JSON_PRESERVE_ZERO_FRACTION
